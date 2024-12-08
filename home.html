@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - The MunchMate</title>
+    <link rel="icon" href="982b6014-9db4-4892-ac95-f7e0b1d6d440.jfif" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url('various-vegetables-black-table-with-space-message_1220-616.avif');
+            background-size: cover;
+            background-position: center;
+            font-family: 'Roboto', sans-serif;
+            color: white;
+        }
+
+        header {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        header h1 {
+            font-size: 4em;
+            color: #ffeaa7;
+            text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 15px;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        nav {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            font-size: 1.2em;
+            z-index: 1;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #ffeaa7;
+        }
+
+        nav a.active {
+            background-color: rgba(255, 255, 255, 0.3);
+            color: #ffeaa7;
+        }
+
+        .section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: 50px auto;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        .section h3 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #ffeaa7;
+            margin-bottom: 20px;
+        }
+
+        .dish {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .dish img {
+            width: 100%;
+            height: 200px; 
+            object-fit: cover;
+            border-radius: 12px;
+            transition: transform 0.3s ease;
+        }
+
+        .dish img:hover {
+            transform: scale(1.05);
+        }
+
+        .dish div {
+            text-align: center;
+        }
+
+        .dish h4 {
+            font-size: 1.8em;
+            margin-top: 10px;
+            color: #ffeaa7;
+        }
+
+        .dish p {
+            font-size: 1.1em;
+            color: #ddd;
+        }
+
+        .section p {
+            text-align: center; 
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        footer {
+            background-color: rgba(0, 0, 0, 0.9);
+            color: #ccc;
+            padding: 15px;
+            text-align: center;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>Welcome to The MunchMate!</h1>
+        <p>Embark on a culinary journey with our exquisite dishes crafted for every taste.</p>
+    </div>
+    <nav>
+        <a href="home2.html" class="active">Home</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="menu.html">Menu</a>
+        <a href="career.html">Careers</a>
+        <a href="bankdiscount.html">Bank Discount</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="section">
+    <h3>Featured Dishes</h3>
+    <div class="dish">
+        <div>
+            <img src="handikabab.jfif" alt="Handi Kebab">
+            <h4>Handi Kebab</h4>
+            <p>A succulent blend of tender meat marinated in spices, slow-cooked for a rich flavor.</p>
+        </div>
+        <div>
+            <img src="41168ff6-4abb-4c3c-9b40-dbae19dcf28c.jfif" alt="Spaghetti">
+            <h4>Spaghetti</h4>
+            <p>Traditional pasta in a savory tomato-based sauce, topped with fresh herbs and cheese.</p>
+        </div>
+    </div>
+</div>
+
+<div class="section">
+    <h3>About Us</h3>
+    <p>At The MunchMate, we create unforgettable dining experiences by using the finest ingredients and blending them into flavorful dishes that delight every palate. Join us for a culinary adventure!</p>
+</div>
+<footer>
+    <p>&copy; 2024 The MunchMate. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

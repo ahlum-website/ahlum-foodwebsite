@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="6d7b5a8a-7000-4d46-9f3c-d94a7822d9fa.jfif" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Contact Us</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #121212; 
+            color: #e0e0e0; 
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background-color: #222; 
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            margin: 0 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            color: #ffeaa7;
+        }
+
+        .contact-section {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+            background: #1e1e1e; 
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        h2 {
+            color: #ffab40; 
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+        p {
+            margin: 10px 0;
+            color: #b0b0b0; 
+        }
+        .contact-info {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .info-item {
+            flex: 1;
+            min-width: 220px;
+            margin: 10px;
+            background-color: #424242; 
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        .info-item h4 {
+            margin: 0;
+            color: #ffab40; 
+        }
+        .info-item a {
+            color: #ffab40; 
+            text-decoration: none;
+        }
+        .info-item a:hover {
+            text-decoration: underline;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #666; 
+            border-radius: 5px;
+            background-color: #333; 
+            color: #fff; 
+        }
+        button {
+            background-color: #ffab40; 
+            color: black;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #ffa726; 
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #ffab40; 
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        .location {
+            margin-top: 30px;
+            background-color: #424242; 
+            padding: 15px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="aboutus.html">ABOUT US</a>
+            <a href="menu.html">MENU</a>
+            <a href="career.html">CAREERS</a>
+            <a href="bankdiscount.html">BANK DISCOUNT</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>  
+    </header>
+
+    <div class="contact-section">
+        <h2>Contact Us</h2>
+        <p>We’d love to hear from you! Feel free to reach out with any questions or feedback.</p>
+        
+        <div class="contact-info">
+            <div class="info-item">
+                <h4>Phone</h4>
+                <p><a href="tel:+1234567890">03321033822</a></p>
+            </div>
+            <div class="info-item">
+                <h4>Email</h4>
+                <p><a href="mailto:info@yourrestaurant.com">info@munchmate.com</a></p>
+            </div>
+            <div class="info-item">
+                <h4>Address</h4>
+                <p>Shahrah-e-Faisal ,<br>3rd Floor, Azayam Plaza 5/A، Shahrah-e-Faisal Rd, Block A Sindhi Muslim CHS (SMCHS), Karachi, Pakistan</p>
+            </div>
+        </div>
+        
+        <h3>Send Us a Message</h3>
+        <form action="submit_form.php" method="POST">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" rows="4" placeholder="Your Message" required></textarea>
+            <a href="thankyou.html" download>
+                <button type="button">Send Message</button>
+            </a>
+        </form>
+        
+        <h3>Follow Us</h3>
+        <div class="social-links">
+            <a href="https://www.facebook.com/yourrestaurant" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/yourrestaurant" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com/yourrestaurant" target="_blank">Twitter</a>
+        </div>
+        
+        <h3>Find Us</h3>
+        <div class="location">
+            <p>Visit us at: Shahrah-e-Faisal ,
+                3rd Floor, Azayam Plaza 5/A، Shahrah-e-Faisal Rd, Block A Sindhi Muslim CHS (SMCHS), Karachi, Pakistan</p>
+            <p>Or check out our location on <a href="https://www.google.com/maps" target="_blank" style="color: #ffab40;">Google Maps</a>.</p>
+        </div>
+    </div>
+</body>
+</html>

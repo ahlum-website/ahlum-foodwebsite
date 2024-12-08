@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="6d7b5a8a-7000-4d46-9f3c-d94a7822d9fa.jfif" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Apply Now</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            padding: 20px;
+            background-image: linear-gradient(rgba(18, 18, 18, 0.5), rgba(18, 18, 18, 0.5)), url('various-vegetables-black-table-with-space-message_1220-616.avif');
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+        .form-container {
+            background: rgba(30, 30, 30, 0.9);
+            padding: 30px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+        h2 {
+            color: #ffab40;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        label {
+            display: block;
+            font-size: 1.1em;
+            color: #ffab40;
+            margin-bottom: 5px;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #333;
+            color: #e0e0e0;
+            font-size: 1em;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .submit-button {
+            background-color: #ffab40;
+            color: black;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background-color 0.3s;
+            font-size: 1.1em;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .submit-button:hover {
+            background-color: #ffa726;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Apply Now</h2>
+        <form action="than.html" method="get">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="position">Position Applied For:</label>
+                <select id="position" name="position" required>
+                    <option value="Chef">Chef</option>
+                    <option value="Server">Server</option>
+                    <option value="Manager">Manager</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="experience">Experience (in years):</label>
+                <input type="number" id="experience" name="experience" min="0" required>
+            </div>
+            <div class="form-group">
+                <label for="cover-letter">Cover Letter:</label>
+                <textarea id="cover-letter" name="cover-letter" rows="5" placeholder="Tell us why you're a great fit" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Submit Application</button>
+        </form>
+    </div>
+    
+        
+      
+</body>
+</html>
